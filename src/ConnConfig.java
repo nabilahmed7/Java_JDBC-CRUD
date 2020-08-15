@@ -7,7 +7,7 @@ public class ConnConfig {
         Connection conn =null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc","root","");
+            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/YOUR_DATABASE_NAME","root","");
         }catch (Exception e){
             e.printStackTrace();
         }
